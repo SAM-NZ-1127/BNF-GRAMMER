@@ -1,6 +1,6 @@
 # BNF-GRAMMER
 
-modify the following BNF grammar to resolve
+Modify the following BNF grammar to resolve
 the ambiguity due to operator precedence and associativity.
 <e> ::= <e> + <e>
 | <e> - <e>
