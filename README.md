@@ -1,6 +1,6 @@
 # BNF-GRAMMER
 
-Modify the following BNF grammar to resolve
+For this homework, you will modify the following BNF grammar to resolve
 the ambiguity due to operator precedence and associativity.
 <e> ::= <e> + <e>
 | <e> - <e>
@@ -15,10 +15,10 @@ the ambiguity due to operator precedence and associativity.
 | - <e>
 | ( <e> )
 | <NUMBER>
-Note that your grammars do not consider white spaces and <NUMBER> is a
+Note that your grammar do not consider white spaces, and <NUMBER> is a
 non-terminal that refers to numbers.
 1 Requirement
-1. The new grammar should have precedence as shown below, where the
+1. The new grammar should have precedence, as shown below, where the
 operators in the lower lines have higher precedence.
 &&, ||
 ==, <, >
@@ -114,3 +114,8 @@ side of the production rule. If your implementation is correct, you should
 get the same output as you do with the original hwk2.jison.
 3
 4. The new grammar should not include %prec UMINUS.
+2 Submission
+Please submit
+1. a file hwk2.txt that contains the BNF grammar in text and
+2. a file called hwk2.jison that contains your solution in jison
+to the dropbox.
