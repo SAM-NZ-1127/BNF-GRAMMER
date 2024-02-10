@@ -1,0 +1,18 @@
+<e> ::= <e> "||" <ce>
+	| <e> "&&" <ce>
+	| <ce>
+<ce> ::= <ce> "==" <pme>
+	| <ce> "<" <pme>
+	| <ce> ">" <pme>
+	| <pme>
+<pme>::= <pme> "+" <mde>
+	| <pme> "-" <mde>
+	| <mde>
+<mde>::= <mde> "*" <uee>
+	| <mde> "/" <uee>
+	| <uee>
+<uee>::= "-" <expr>
+	| "!" <expr>
+	| <expr>
+<expr> ::= | "(" <e> ")"
+	| <NUMBER>
